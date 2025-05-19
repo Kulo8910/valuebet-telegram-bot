@@ -1,14 +1,13 @@
-
 import requests
 import asyncio
 from telegram import Bot
 
-TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-CHAT_ID = YOUR_CHAT_ID  # Số, không có dấu nháy
+TOKEN = '7713996684:AAHu0ZAZQf1HmJFckAPn9P-Ffh_idJI94vg'
+CHAT_ID = 5686594211  # ID cá nhân của bạn
 
 async def main():
     bot = Bot(token=TOKEN)
-    url = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/value_bet.txt'
+    url = 'https://raw.githubusercontent.com/Kulo8910/valuebet-telegram-bot/main/value_bet.txt'
     try:
         response = requests.get(url)
         content = response.text
