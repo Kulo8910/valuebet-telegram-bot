@@ -1,0 +1,8 @@
+
+services:
+  - type: cron
+    name: valuebet-telegram-bot
+    schedule: "@every 5m"
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python send_from_github.py"
